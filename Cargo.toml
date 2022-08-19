@@ -1,0 +1,13 @@
+[package]
+name = "xls-exporter-rs"
+version = "0.1.0"
+edition = "2021"
+
+[target.windows]
+rustflags = ["-C", "target-feature=+crt-static"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+calamine = "0.18"
+clap = { version = "3.2", features = ["derive"] }
